@@ -1,0 +1,10 @@
+#home {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 2rem;
+}

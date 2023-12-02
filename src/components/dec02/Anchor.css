@@ -1,0 +1,26 @@
+a.highlight-link {
+  position: relative;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+a.highlight-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.2px;
+  background-color: var(--primary);
+  transition: height 0.2s ease;
+}
+
+a.highlight-link:hover::before {
+  height: 3.5px;
+}
+
+a.highlight-link:active::before,
+a.highlight-link.active::before {
+  height: 10px;
+  background-color: var(--secondary);
+}
