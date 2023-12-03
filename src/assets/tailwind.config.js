@@ -68,6 +68,35 @@ export default {
           "background-color": colors.primary,
           "border-color": colors.primary,
         },
+        ".t-btn-secondary": {
+          color: colors.text,
+          "background-color": "transparent",
+          "border-color": colors.secondary,
+        },
+        ".t-btn-secondary:hover": {
+          color: colors.background,
+          "background-color": colors.secondary,
+          "border-color": colors.secondary,
+        },
+        ".t-btn-secondary:active, .t-btn-secondary.active": {
+          color: "#fff",
+          "background-color": colors.primary,
+          "border-color": colors.primary,
+        },
+        ".t-btn-glow": {
+          "background-color": colors.primary,
+          border: "1px solid " + colors.primary,
+          color: "#fff",
+        },
+        ".t-btn-glow:hover": {
+          color: "#fff",
+          "background-color": colors.primary,
+          border: "1px solid " + colors.primary,
+          "box-shadow": "0 0 15px 4px " + colors.primary,
+        },
+        ".t-btn-glow:active, .t-btn-glow.active": {
+          "box-shadow": "0 0 10px 2.5px " + colors.primary,
+        },
         ".highlight-link": {
           position: "relative",
           "text-decoration": "none",

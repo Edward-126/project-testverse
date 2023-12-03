@@ -12,6 +12,10 @@ export default function Home() {
         <div className="container">
           <button className="t-btn">Button</button> &nbsp;&nbsp;
           <button className="t-btn t-btn-primary">Button-Primary</button>
+          &nbsp;&nbsp;
+          <button className="t-btn t-btn-secondary">Button-Secondary</button>
+          &nbsp;&nbsp;
+          <button className="t-btn t-btn-glow">Button-Glow</button>
         </div>
 
         <div className="container">
