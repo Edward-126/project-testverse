@@ -47,7 +47,7 @@ export default function Home() {
                 <h2 className=" text-5xl font-semibold">
                   <CountUp
                     start={0}
-                    end={5}
+                    end={7}
                     duration={2}
                     delay={1}
                     suffix="+"
