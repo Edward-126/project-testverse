@@ -41,7 +41,7 @@ export default function Home() {
                     suffix="+"
                   />
                 </h2>
-                <p className=" text-xl">Series added</p>
+                <p className="md:text-xl">Series added</p>
               </span>
               <span>
                 <h2 className=" text-5xl font-semibold">
@@ -53,7 +53,7 @@ export default function Home() {
                     suffix="+"
                   />
                 </h2>
-                <p className=" text-xl">Years of memories</p>
+                <p className="md:text-xl">Years of content</p>
               </span>
             </div>
             <div className="">
