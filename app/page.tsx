@@ -29,15 +29,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className=" grid gap-4 md:grid-cols-2 md:gap-8">
-            <div className=" grid grid-cols-2 items-center gap-8 capitalize">
+          <div className=" grid gap-4 md:grid-cols-12 md:gap-8">
+            <div className=" grid grid-cols-2 items-center gap-8 capitalize md:col-span-5">
               <span>
                 <h2 className=" text-5xl font-semibold">
                   <CountUp
                     start={0}
                     end={480}
                     duration={2}
-                    delay={1}
+                    delay={0.5}
                     suffix="+"
                   />
                 </h2>
@@ -49,14 +49,14 @@ export default function Home() {
                     start={0}
                     end={7}
                     duration={2}
-                    delay={1}
+                    delay={0.5}
                     suffix="+"
                   />
                 </h2>
                 <p className="md:text-xl">Years of content</p>
               </span>
             </div>
-            <div className="">
+            <div className=" md:col-span-7">
               <p className="mb-4 text-xl">
                 Beyond the screen, beyond the subtitles. Dive deeper into your
                 fandom with a watchlist that cares.
