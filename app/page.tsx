@@ -1,6 +1,9 @@
-import Image from "next/image";
+"use client";
 
+import Image from "next/image";
+import CountUp from "react-countup";
 import { FaAnglesDown } from "react-icons/fa6";
+
 import heroImg from "./assets/hero.jpg";
 import { Button } from "@/components/ui/button";
 
@@ -9,9 +12,9 @@ export default function Home() {
     <>
       <div className="relative min-h-screen px-5 md:px-10 xl:px-20 2xl:px-28">
         <header className="flex h-screen flex-col items-center justify-center gap-5 md:gap-8">
-          <h1 className="text-6xl md:text-8xl">
+          <h1 className="text-6xl font-semibold md:text-8xl">
             Track your passion,{" "}
-            <span className=" text-neutral-400">one episode at a time.</span>
+            <span className=" text-primary/70">one episode at a time.</span>
           </h1>
           <div className="group relative h-1/4">
             <Image
@@ -29,11 +32,27 @@ export default function Home() {
           <div className=" grid gap-4 md:grid-cols-2 md:gap-8">
             <div className=" grid grid-cols-2 items-center gap-8 capitalize">
               <span>
-                <h2 className=" text-5xl font-semibold">480</h2>
+                <h2 className=" text-5xl font-semibold">
+                  <CountUp
+                    start={0}
+                    end={480}
+                    duration={2}
+                    delay={1}
+                    suffix="+"
+                  />
+                </h2>
                 <p className=" text-xl">Series added</p>
               </span>
               <span>
-                <h2 className=" text-5xl font-semibold">5+</h2>
+                <h2 className=" text-5xl font-semibold">
+                  <CountUp
+                    start={0}
+                    end={5}
+                    duration={2}
+                    delay={1}
+                    suffix="+"
+                  />
+                </h2>
                 <p className=" text-xl">Years of memories</p>
               </span>
             </div>
