@@ -1,15 +1,15 @@
-"use client";
-
 import Image from "next/image";
-import CountUp from "react-countup";
 import { FaAnglesDown } from "react-icons/fa6";
 
 import heroImg from "./assets/hero.jpg";
 import { Button } from "@/components/ui/button";
+import CountUpItem from "@/components/shared/CountUp";
+import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
   return (
     <>
+      {/* <Navbar /> */}
       <div className="relative min-h-screen px-5 md:px-10 xl:px-20 2xl:px-28">
         <header className="flex h-screen flex-col items-center justify-center gap-5 md:gap-8">
           <h1 className="text-6xl font-semibold md:text-8xl">
@@ -33,25 +33,13 @@ export default function Home() {
             <div className=" grid grid-cols-2 items-center gap-8 capitalize md:col-span-5">
               <span>
                 <h2 className=" text-5xl font-semibold">
-                  <CountUp
-                    start={0}
-                    end={480}
-                    duration={2}
-                    delay={0.5}
-                    suffix="+"
-                  />
+                  <CountUpItem start={0} end={480} duration={2} delay={0.5} />
                 </h2>
                 <p className="md:text-xl">Series added</p>
               </span>
               <span>
                 <h2 className=" text-5xl font-semibold">
-                  <CountUp
-                    start={0}
-                    end={7}
-                    duration={2}
-                    delay={0.5}
-                    suffix="+"
-                  />
+                  <CountUpItem start={0} end={7} duration={2} delay={0.5} />
                 </h2>
                 <p className="md:text-xl">Years of content</p>
               </span>
