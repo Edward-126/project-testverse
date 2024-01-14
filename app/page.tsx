@@ -12,10 +12,8 @@ import Actors from "@/components/shared/Actors";
 export default function Home() {
   return (
     <>
-      <div className="">
-        <Movies />
+      <div className="h-full w-full">
         <Tvs />
-        <Actors />
       </div>
     </>
   );
