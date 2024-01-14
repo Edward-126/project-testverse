@@ -3,8 +3,8 @@ import { FaAnglesDown } from "react-icons/fa6";
 
 import heroImg from "./assets/hero.jpg";
 import { Button } from "@/components/ui/button";
-import CountUpItem from "@/components/shared/CountUp";
-import Navbar from "@/components/shared/Navbar";
+import CountUpItem from "@/testing/CountUp";
+import Navbar from "@/testing/Navbar";
 
 export default function Home() {
   return (
