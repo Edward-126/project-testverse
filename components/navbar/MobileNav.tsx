@@ -39,7 +39,7 @@ const MobileNav = () => {
       <nav className="md:hidden">
         <div
           ref={menuRef}
-          className={`${isOpen ? "h-screen" : "h-15"} fixed inset-0 z-40`}
+          className={`${isOpen ? "h-dvh" : "h-15"} fixed inset-0 z-40`}
         >
           <div className="absolute right-0 top-0 z-50">
             <button
