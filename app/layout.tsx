@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Cabin } from "next/font/google";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 
-const cabin = Cabin({
+const inter = Inter({ subsets: ["latin"] });
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -17,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={cabin.className + " "}>{children}</body>
+    <html lang="en" className="!scroll-smooth">
+      <body className={inter.className + " "}>
+        <Navbar />
+        <div className="">{children}</div>
+      </body>
     </html>
   );
 }
